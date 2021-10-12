@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Created By Vihaan C -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Percentage Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="x-icon" href="ok.png">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            Percentage Calculator
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="#" onclick="redirect_home()">Home</a></li>
+            <li><a href="#" onclick="redirect_marks()">Marks To Percent</a></li>
+            <li><a href="#" onclick="redirect_total()">Total To Percent</a></li>
+            <li><a href="#" onclick="redirect_help()">Help</a></li>
+            <li><a href="#" onclick="redirect_feedback()">Feedback</a></li>
+         </ul>
+      </nav>
+      <br>
+      <br>
+      <center>
+        <u><label id="header">Welcome To The Help Section</label></u>
+        <br>
+        <br>
+        <label id="header">If You Find Any Problem On This Website. Then Please Scroll Down And See If Any Of The Articles Are Helpful. If Not You Can Give Me Your Feedback <a href="feedback.html">Here.</a></a></label>
+        <br>
+      <div id="article">
+          <label id="article_text">1. </label> <label id="article_info">If Getting A Higher Percentage Than 100%</label>
+          <br>
+          <br>
+          <u><label id="article_info">Reasons</label></u>
+          <br>
+          <hr>
+          <label id="article_info">1. If You Did Not Type The Correct Marks Recieved By The Student</label>
+          <br>
+          <img src="Error_1.png">
+          <br>
+          <hr>
+          <br>
+          <label id="article_info">2. If You Did Not Type The Total Marks</label>
+          <br>
+          <img src="Error_2.png">
+
+      </div>
+      <br>
+      <br>
+      <div id="article">
+        <label id="article_text">2. </label> <label id="article_info">If Getting NaN%</label>
+        <br>
+        <br>
+        <u><label id="article_info">Reasons</label></u>
+        <br>
+        <hr>
+        <label id="article_info">1. If You Did Not Fill All The Criteria.</label>
+        <br>
+        <img src="Error_2.png">
+        <br>
+        <hr>
+        <br>
+        <label id="article_info">2. If You Typed A Letter (By Mistake)</label>
+        <br>
+        <img src="Error_3.png">
+
+    </div>
+
+    <br>
+      <br>
+      <div id="article">
+        <label id="article_text">3. </label> <label id="article_info">If Getting The Total Marks Recieved Isn't Correct</label>
+        <br>
+        <br>
+        <u><label id="article_info">Reasons</label></u>
+        <br>
+        <hr>
+        <label id="article_info">1. If You Did Not Fill All The Criteria.</label>
+        <br>
+        <img src="Error_4.png">
+        <br>
+        
+    </div>
+    </center>
+      </body>
+      <script src="help.js"></script>
+      </html>

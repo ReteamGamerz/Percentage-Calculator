@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Created By Vihaan C -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Percentage Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="x-icon" href="ok.png">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            Percentage Calculator
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="#" onclick="redirect_home()">Home</a></li>
+            <li><a href="#" onclick="redirect_marks()">Marks To Percent</a></li>
+            <li><a href="#" onclick="redirect_total()">Total To Percent</a></li>
+            <li><a href="#" onclick="redirect_help()">Help</a></li>
+            <li><a href="#" onclick="redirect_feedback()">Feedback</a></li>
+         </ul>
+      </nav>
+<br>
+<br>
+<button id="marks_eti_1" onclick="Help()">Help</button>
+      <center>
+
+    <span>
+      <label> Please Enter The Marks Recieved By The Student Here -> </label>
+      
+      <input type="text" id="input_received">
+   </span>
+   <br>
+   <span>
+      <label> Please Enter The Total Marks Here ( Important To Fill ) ->             </label>   
+      <input type="text" id="input_total">
+   </span>
+   <br>
+   <br>
+   <br>
+   <label> Click On The Buttons To Get the Total Marks (Easier than Typing) </label>   
+   <br>
+   <br>
+   <span>
+   <button id="marks_eti" onclick="get_10()">10</button>
+   <button id="marks_eti" onclick="get_20()">20</button>
+   <button id="marks_eti" onclick="get_30()">30</button>
+   <button id="marks_eti" onclick="get_40()">40</button>
+   <button id="marks_eti" onclick="get_50()">50</button>
+   <button id="marks_eti" onclick="get_60()">60</button>
+   <button id="marks_eti" onclick="get_70()">70</button>
+   <button id="marks_eti" onclick="get_80()">80</button>
+   <button id="marks_eti" onclick="get_90()">90</button>
+   <button id="marks_eti" onclick="get_100()">100</button>
+   </span>
+   <br>
+   <br>
+   <br>
+   <button id="button_get" onclick="getPercent()"> Get Percentage </button>
+   <br>
+   <br>
+   
+   <div id="error">Percentage :  </div>
+
+   </center>
+<br>
+<br>
+   
+   
+      </body>
+
+      <script src="marks_percent.js"></script>
+      </html>
