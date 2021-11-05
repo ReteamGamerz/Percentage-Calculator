@@ -86,3 +86,5 @@ function Help() {
     window.location = "help.html";
 }
 
+RecievedMarks = document.getElementById("input_received").value;
+TotalMarks = document.getElementById("input_total").value;
