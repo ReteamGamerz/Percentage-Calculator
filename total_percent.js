@@ -79,10 +79,12 @@ function get_10() {
     total = document.getElementById("input_total").value * 6;
     recieved = Number(Maths) + Number(Science) + Number(Social) + Number(Second) + Number(Third) + Number(English);
     answer = (recieved / total) * 100;
+    marksLost = total - recieved;
 
     
     document.getElementById("Percentage").innerHTML = "Total Percentage = " + answer + "%";
-    document.getElementById("Marks").innerHTML = "Total Marks = " + recieved ;
+    document.getElementById("Marks").innerHTML = "Total Marks = " + recieved;
+    document.getElementById("error_marks").innerHTML = "Total Marks Lost = " + marksLost ;
 
     console.log("Maths = " + Maths);
     console.log("Science = " + Science);
@@ -95,8 +97,49 @@ function get_10() {
     console.log("Total Marks = " + total);
     console.log("Recieved Marks = " + recieved);
     console.log("Total Percent = " + answer);
+    console.log("Total Marks Lost = " + marksLost);
 
-    
+    //------ Code For 'Out Of Marks' -------//
+
+    if(Total_Marks == 10) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 60";
+    }
+
+    if(Total_Marks == 20) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 120";
+    }
+
+    if(Total_Marks == 30) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 180";
+    }
+
+    if(Total_Marks == 40) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 240";
+    }
+
+    if(Total_Marks == 50) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 300";
+    }
+
+    if(Total_Marks == 60) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 360";
+    }
+
+    if(Total_Marks == 70) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 420";
+    }
+
+    if(Total_Marks == 80) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 480";
+    }
+
+    if(Total_Marks == 90) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 540";
+    }
+
+    if(Total_Marks == 100) {
+        document.getElementById("Marks").innerHTML = "Total Marks = " + recieved + " | 600";
+    }
  }
 
 // ---- Code For Help Navigation ----//

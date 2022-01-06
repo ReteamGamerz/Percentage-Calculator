@@ -203,6 +203,15 @@ input {
   width: fit-content;
 }
 
+#error_marks {
+  font-size: 25px;
+  border-radius: 0px;
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+  width: fit-content;
+}
+
 #Percentage {
   font-size: 25px;
   border-radius: 0px;

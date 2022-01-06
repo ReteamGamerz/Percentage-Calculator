@@ -23,17 +23,18 @@ function redirect_feedback() {
 
 //---- Variables ----//
 
-
-
 // Get Percentage //
 
 function getPercent() {
 
     answer = (document.getElementById("input_received").value / document.getElementById("input_total").value) * 100;
+    marksLost = (document.getElementById("input_total").value - document.getElementById("input_received").value);
   
     document.getElementById("error").innerHTML = "Percentage = " + answer + "%";
+    document.getElementById("error_marks").innerHTML = "Marks Lost = " +  marksLost + "";
   
-    console.log(answer);
+    console.log("Percentage = " + answer);
+    console.log("Marks Lost = " + marksLost);
   
   }
 
