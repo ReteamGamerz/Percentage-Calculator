@@ -1,3 +1,4 @@
+
 // ----- Code For Navigation -----//
 
 function redirect_marks() {
@@ -23,20 +24,53 @@ function redirect_feedback() {
 
 //---- Variables ----//
 
+var marks_input = ""
+var marks_total = ""
+
 // Get Percentage //
 
 function getPercent() {
 
-    answer = (document.getElementById("input_received").value / document.getElementById("input_total").value) * 100;
-    marksLost = (document.getElementById("input_total").value - document.getElementById("input_received").value);
+    marks_input = document.getElementById("input_received").value;
+    marks_total = document.getElementById("input_total").value;
+
+    answer = ( marks_input / marks_total) * 100;
+    marksLost = (marks_total - marks_input);
   
     document.getElementById("error").innerHTML = "Percentage = " + answer + "%";
     document.getElementById("error_marks").innerHTML = "Marks Lost = " +  marksLost + "";
   
     console.log("Percentage = " + answer);
     console.log("Marks Lost = " + marksLost);
+
+    // ------- Code For Zenbot ------- //
+
+    
   
   }
+
+  /// ------------------------ Code For Clear Input ------------------------///
+
+  function ClearInput(){
+
+    document.getElementById("input_received").value = "";
+    document.getElementById("input_total").value = "";
+
+    document.getElementById("error").innerHTML = "Percentage : ";
+    document.getElementById("error_marks").innerHTML = "Marks Lost : ";
+
+    console.log("Deleted Input -> Marks Recieved");
+    console.log("Deleted Input -> Total Marks");
+
+    console.log("Deleted Input -> Percentage ");
+    console.log("Deleted Input -> marks Lost ");
+
+
+  }
+
+
+
+
 
 //--- Code For The Buttons ----//
 
@@ -64,7 +98,6 @@ function get_60() {
     document.getElementById("input_total").value = "60";
 }
 
-
 function get_70() {
     document.getElementById("input_total").value = "70";
 }
@@ -87,5 +120,5 @@ function Help() {
     window.location = "help.html";
 }
 
-RecievedMarks = document.getElementById("input_received").value;
-TotalMarks = document.getElementById("input_total").value;
+
+

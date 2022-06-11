@@ -28,8 +28,6 @@
       </nav>
       <br>
       <br>
-      
-      <br>
           <center>
       <div id="header">Please Enter All The Subjects Given Here 👇</div>
       <br>
@@ -42,15 +40,15 @@
       <span>Social Science -> <input type="number" id="input_received_social" placeholder="Social Science"></span>
       <br>
       <br>
-      <span>2nd Language -> <input type="number" id="input_received_2nd" placeholder="2nd Language"></span>
+      <span>II Language -> <input type="number" id="input_received_2nd" placeholder="2nd Language"></span>
       <br>
       <br>
-      <span>3rd Language -> <input type="number" id="input_received_3rd" placeholder="3rd Language"></span>
+      <span>III Language -> <input type="number" id="input_received_3rd" placeholder="3rd Language"></span>
       <br>
       <br>
       <span>English -> <input type="number" id="input_received_english" placeholder="English"></span>
       <br><br>
-      <span>Total (Click On the Buttons) -> <input type="number" id="input_total" placeholder="Total"></span>
+      <span>Out Of (Click On the Buttons) -> <input type="number" id="input_total" placeholder="Total"></span>
       <br>
       <br>
       <span>
@@ -66,15 +64,19 @@
         <button id="marks_eti" onclick="get_100()">100</button>
         </span>
 
-        <br>
-        <br>
-        <button id="button_get" onclick="getTotalPercent()"> Get Percentage </button>
         <br><br>
-        <div id="Marks">Total Marks :  </div>
+        <div id="Marks">Total Marks =  </div>
         <br>
-        <div id="Percentage">Total Percentage :  </div>
+        <div id="Percentage">Total Percentage =  </div>
         <br>
-        <div id="error_marks">Total Marks Lost :  </div>
+        <div id="error_marks">Total Marks Lost =  </div>
+        <br>
+        <div id="error_marks_average">Average Marks =  </div>
+        <br>
+        <button id="button_get" onclick="getTotalPercent()"> Calculate </button>
+        <br>
+        <br>
+        <button id="button_get" onclick="InputClear()"> Clear </button>
         
           </center>
 

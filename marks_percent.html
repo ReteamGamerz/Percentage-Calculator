@@ -29,6 +29,9 @@
 <br>
 <br>
       <center>
+         <span>
+            <div id="error_zenfinder"> Errors : </div>
+         </span>
 
     <span>
       <label> Please Enter The Marks Recieved By The Student Here -> </label>
@@ -37,7 +40,7 @@
    </span>
    <br>
    <span>
-      <label> Please Enter The Total Marks Here ( Important To Fill ) ->             </label>   
+      <label> Please Enter The Out Of Marks Here ( Important To Fill ) ->             </label>   
       <input type="number" id="input_total" placeholder="Total Marks">
    </span>
    <br>
@@ -59,15 +62,16 @@
    <button id="marks_eti" onclick="get_100()">100</button>
    </span>
    <br>
-   <br>
-   <br>
-   <button id="button_get" onclick="getPercent()"> Get Percentage </button>
-   <br>
-   <br>
-   
+   <br> 
    <div id="error">Percentage :  </div>
    <br>
    <div id="error_marks">Marks Lost :  </div>
+   <br>
+   <br>
+   <button id="button_get" onclick="getPercent()"> Calculate </button>
+   <br>
+   <br>
+   <button id="button_get" onclick="ClearInput()"> Clear </button>
 
    </center>
 <br>

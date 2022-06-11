@@ -1,0 +1,105 @@
+ ///------- NumError ----------///
+
+    if (Maths > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (Maths)";
+
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> Maths");
+    } 
+
+    if (Science > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (Science)";
+
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> Science");
+    } 
+
+    if (Social > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (Social)";
+
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> Social");
+    } 
+
+    if (English > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (English)";
+
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> English");
+    } 
+
+    if (Second > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (II Language)";
+
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> II Language");
+    } 
+
+    if (Third > Total_Marks) {
+        document.getElementById("error_zenfinder").innerHTML = "Error : Please Check Your Input (III Language)";
+        
+        document.getElementById("Marks").innerHTML = "Total Marks = %Error%";
+        document.getElementById("Percentage").innerHTML = "Total Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Total Marks Lost = %Error%";
+        document.getElementById("error_marks_average").innerHTML = "Average Marks : %Error%"
+        //------Code For Console Display -------//
+        console.log("Console : NumError -> III Language");
+    } 
+
+--------------------------------------------------------------
+
+// ------- Error1 ------- //
+    if (marks_input == "" ) {
+        forgot_error_recieved = document.getElementById("error_zenfinder").innerHTML = "Error : Please Input All Fields!! (Recieved Marks)";
+        console.log("Console = Input Not Given (Error1) -> " + forgot_error_recieved)
+        //----- Code For Error Display ------//
+        document.getElementById("error").innerHTML = "Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Marks Lost = %Error%";
+    } else {
+        forgot_error_recieved = document.getElementById("error_zenfinder").innerHTML = "Error :";
+    }
+
+    
+    if (marks_total == "" ) {
+        forgot_error_total = document.getElementById("error_zenfinder").innerHTML = "Error : Please Input All Fields!! (Total Marks)";
+        console.log("Console = Input Not Given (Error2) -> " + forgot_error_total)
+        //----- Code For Error Display ------//
+        document.getElementById("error").innerHTML = "Percentage = %Error%";
+        document.getElementById("error_marks").innerHTML = "Marks Lost = %Error%";
+    } else {
+        forgot_error_recieved = document.getElementById("error_zenfinder").innerHTML = "Error :";
+    }
+
+    if (marks_input > marks_total) {
+
+        input_error = document.getElementById("error_zenfinder").innerHTML = "Error : Plase Check Your Recieved Marks Input";
+        //----- Code For Error Display ------//
+        error_for_percentage = document.getElementById("error").innerHTML = "Percentage = %Error%";
+        error_for_marks_lost = document.getElementById("error_marks").innerHTML = "Marks Lost = %Error%";
+
+        console.log("Console = Input Error (Error3) -> " + input_error);
+
+    } else {
+        forgot_error_recieved = document.getElementById("error_zenfinder").innerHTML = "Error :";
+    }
+

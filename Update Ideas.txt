@@ -1,0 +1,8 @@
+> Average Marks (PERCENATGE)          -> 👍
+> Clear Button                        -> 👍
+
+
+Lines Of Code ::::
+ HTML -> 445
+ CSS  -> 309
+ JS   -> 551
